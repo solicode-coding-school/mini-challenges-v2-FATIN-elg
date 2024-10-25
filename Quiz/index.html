@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/quizicon.png" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Conteneur principal du quiz -->
+    <div class="container">
+      <!-- Barre de compteur de score et de progression -->
+      <div class="counter-game">
+        <!-- Section pour la barre de progression -->
+        <div class="progress">
+          <div class="progress-text">
+            <p id="question-counter">Question 1/5</p>
+          </div>
+          <div class="initial">
+            <div class="final" id="final1"></div>
+          </div>
+        </div>
+        <!-- Section du score -->
+        <div class="score">
+          <h2>Score</h2>
+          <p id="score">0</p>
+        </div>
+      </div>
+      <!-- Affichage de la question -->
+      <div class="quiz-game">
+        <h2 class="question" id="question">What is Figma?</h2>
+        <div id="choices"></div>
+      </div>
+      <!-- Boutons de fin: quitter et recommencer -->
+      <div id="end-buttons">
+        <button class="restartQuiz" onclick="restartQuiz()">Recommencer</button>
+        <button class="quitQuiz" onclick="quitQuiz()">Quitter</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

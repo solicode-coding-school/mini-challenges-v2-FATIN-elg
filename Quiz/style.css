@@ -1,0 +1,109 @@
+/* Réinitialiser les marges et paddings */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style de base pour la page */
+body {
+  background-color: rgb(251, 223, 227);
+}
+
+/* Disposition du compteur de jeu */
+.counter-game {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+/* Style pour le texte de progression */
+.progress-text p {
+  position: relative;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style pour la barre de progression */
+.initial {
+  width: 200%;
+  height: 20px;
+  border: 2px solid #ca7f80;
+  margin-top: 10px;
+}
+.final {
+  width: 20%;
+  height: 100%;
+  background: #cb7d7d;
+  transition: width 0.3s ease;
+}
+
+/* Affichage du score */
+.score p {
+  text-align: center;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(171, 114, 114);
+}
+
+/* Affichage de la question */
+.question {
+  display: flex;
+  margin-left: 290px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+/* Style pour chaque choix de réponse */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  justify-content: center;
+}
+.choice-container:hover {
+  cursor: pointer;
+}
+.choice-perfix {
+  height: 50px;
+  width: 5%;
+  background-color: #ce8989;
+  color: white;
+}
+.choice-perfix p {
+  text-align: center;
+  margin-top: 10px;
+}
+.choice-text {
+  width: 50%;
+  height: 50px;
+  text-align: justify;
+  background-color: #fff;
+}
+.choice-text p {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+/* Style des boutons de fin */
+#end-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+  margin-top: 50px;
+}
+#end-buttons > button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ca7f80;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
